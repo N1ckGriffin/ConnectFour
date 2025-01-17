@@ -1,8 +1,6 @@
 Connect Four Game
 by: Nicholas Griffin
 
-Link to Demonstration Video: https://youtu.be/kUYWjM-5E9s
-
 How to Play:
 Players take turns placing their colored chips into one of the seven columns. 
 The chips will fall to the lowest empty space in the column. The goal of the
