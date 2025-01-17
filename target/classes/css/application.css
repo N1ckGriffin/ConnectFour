@@ -29,11 +29,9 @@
     -fx-background-color: #c0392b;
 }
 
-#BoardGrid {
-    -fx-background-color: #2c3e50;
-    -fx-padding: 10px;
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 5);
-    -fx-background-radius: 10px;
+.falling-circle {
+    -fx-translate-y: -600;
+    -fx-fill: white;
 }
 
 .circle {
@@ -47,13 +45,11 @@
     -fx-effect: innershadow(three-pass-box, rgba(255,255,255,0.2), 5, 0, 0, 0);
 }
 
-#label {
-    -fx-background-color: transparent;
-    -fx-text-fill: white;
-    -fx-font-family: "Segoe UI", "Georgia";
-    -fx-font-size: 36px;
+#BoardGrid {
+    -fx-background-color: #2c3e50;
     -fx-padding: 10px;
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 3, 0, 0, 2);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 5);
+    -fx-background-radius: 10px;
 }
 
 #LogHolder {
@@ -75,4 +71,13 @@
 
 #LogHolder .list-cell:filled:hover {
     -fx-background-color: #34495e;
+}
+
+#label {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI", "Georgia";
+    -fx-font-size: 36px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 3, 0, 0, 2);
 }
