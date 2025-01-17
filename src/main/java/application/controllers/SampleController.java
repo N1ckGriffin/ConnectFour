@@ -1,4 +1,6 @@
-package application;
+package application.controllers;
+import application.models.GameLogic;
+import application.models.AI;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

@@ -1,4 +1,4 @@
-package application;
+package application.models;
 import javafx.scene.paint.Color;
 import java.util.ArrayList;
 
