@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect Four game implemented in JavaFX">
     <title>Connect Four Game</title>
     <style>
         body {
@@ -19,12 +20,14 @@
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
             margin: 20px 0;
+            display: block;
         }
         .button {
             display: inline-block;
@@ -34,9 +37,19 @@
             text-decoration: none;
             border-radius: 5px;
             margin-top: 20px;
+            transition: background-color 0.2s;
         }
         .button:hover {
             background-color: #2980b9;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -44,7 +57,9 @@
     <div class="container">
         <h1>Connect Four Game</h1>
         
-        <img src="assets/preview.gif" alt="Game Preview">
+        <div class="preview">
+            <img src="assets/preview.gif" alt="Game Preview">
+        </div>
         
         <h2>Features</h2>
         <ul>
@@ -59,25 +74,29 @@
         <img src="assets/main-game.png" alt="Main Game Screenshot">
         <img src="assets/winning-move.png" alt="Winning Move Screenshot">
 
-        <h2>Download and Play</h2>
+        <h2>Installation</h2>
+        <ol>
+            <li>Download the latest release JAR file</li>
+            <li>Ensure you have Java 17 or later installed</li>
+            <li>Run the game using: <code>java -jar connectfour.jar</code></li>
+        </ol>
+
         <p>
-            Download the latest version and try it yourself!
-            <br>
-            <a href="../../releases" class="button">Download Game</a>
+            <a href="https://github.com/N1ckGriffin/ConnectFour/releases" class="button">Download Latest Release</a>
+            <a href="https://github.com/N1ckGriffin/ConnectFour" class="button">View Source on GitHub</a>
         </p>
 
         <h2>Requirements</h2>
         <ul>
             <li>Java 17 or later</li>
-            <li>Windows, macOS, or Linux</li>
+            <li>Any operating system (Windows, macOS, or Linux)</li>
         </ul>
 
-        <h2>Source Code</h2>
-        <p>
-            View the source code on GitHub:
-            <br>
-            <a href="https://github.com/N1ckGriffin/ConnectFour" class="button">View on GitHub</a>
-        </p>
+        <h2>Development</h2>
+        <p>To build from source:</p>
+        <pre><code>git clone https://github.com/N1ckGriffin/ConnectFour.git
+cd ConnectFour
+mvn clean package</code></pre>
     </div>
 </body>
 </html>
