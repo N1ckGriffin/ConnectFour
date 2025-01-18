@@ -25,5 +25,8 @@ Before you begin, ensure you have the following installed on your machine:
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/connect-four.git
-cd connect-four
+git clone https://github.com/N1ckGriffin/ConnectFour
+cd ConnectFour
+mvn clean package
+mvn javafx:run
+```
