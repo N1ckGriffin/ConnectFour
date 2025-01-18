@@ -6,7 +6,7 @@ A simple Connect Four game built with JavaFX.
 
 Before you begin, ensure you have the following installed on your machine:
 
-1. **Java Development Kit (JDK) 17 or higher**
+1. **Java Development Kit (JDK) 17**
     - Download from [Adoptium](https://adoptium.net/) or [Oracle](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
     - Verify installation:
       ```bash
